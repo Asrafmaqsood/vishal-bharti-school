@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Bharti School</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white dark:bg-gray-900 text-black dark:text-white">
+    <header>
+        <!-- Navbar -->
+        <nav class="border-gray-200" style="background-color: rgb(95,11,53); ">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <!-- Logo -->
+
+                <div class="bg-slate-600 rounded-full w-14 h-14 flex items-center justify-center shadow-xl">
+                    <a href="https://vishalbhartischool.in/">
+                        <h1>VBS</h1>
+                    </a>
+                </div>
+                <!-- Actions -->
+                <div class="flex items-center space-x-4">
+
+                    <!-- Dark Mode Toggle -->
+                    <button id="theme-toggle" class="text-white focus:outline-none px-3">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-6 h-6" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button data-collapse-toggle="navbar-menu" class="text-white md:hidden">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Navbar Links -->
+                <div class="hidden md:flex w-full md:w-auto md:order-1" id="navbar-menu">
+                    <ul class="flex flex-col md:flex-row md:space-x-8 uppercase">
+                        <li><a href="https://vishalbhartischool.in/" class="block text-white px-3 py-2 hover:opacity-80">Home</a></li>
+                        <li><a href="https://vishalbhartischool.in/introduction" class="block text-white px-3 py-2 hover:opacity-80">About</a></li>
+                        <li><a href="https://vishalbhartischool.in/registration-form" class="block text-white px-3 py-2 hover:opacity-80">Admissions</a></li>
+                        <li><a href="https://vishalbhartischool.in/rules-%26-regulations" class="block text-white px-3 py-2 hover:opacity-80">Academics</a></li>
+                        <li><a href="https://vishalbhartischool.in/contact-us" class="block text-white px-3 py-2 hover:opacity-80">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class=" hero relative h-screen flex items-center justify-center text-center" data-scroll-section>
+        <!-- Video Background -->
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+            <source src="/images/bg.mp4" type="video/mp4">
+        </video>
+
+        <!-- Dark Mode Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-50 dark:bg-opacity-70"></div>
+
+        <!-- Content -->
+        <div class="relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold text-slate-500 dark:text-primary-dark mb-4" data-scroll>
+
+                Welcome to Vishal Bharti School
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-400 mb-6  dark:text-primary-dark" data-scroll>
+                Empowering Minds for a Brighter Tomorrow
+            </p>
+            <button
+                class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+                <span
+                    class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    Learn More
+                </span>
+            </button>
+        </div>
+    </section>
+
+    <section id="about"
+    class="py-12 px-6 sm:px-8 lg:px-16 text-center items-center text-slate-400 dark:text-primary-light bg-primary dark:bg-primary-dark">
+    <div class="container mx-auto">
+        <!-- Title -->
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6">
+            Vishal Bharti Senior Secondary School
+        </h2>
+        <!-- Subtitle -->
+        <p class="text-lg sm:text-xl text-center font-semibold leading-relaxed mb-6 sm:mb-8">
+            Discover Vishal Bharti Senior Secondary School's Unique Approach to Learning
+        </p>
+        <!-- Content Section -->
+        <div class="max-w-4xl text-center mx-auto space-y-6 px-4 sm:px-8 lg:px-12">
+            <p class="text-base sm:text-lg leading-loose">
+                At Vishal Bharti Senior Secondary School, we believe that every student has the
+                potential to excel academically and personally. That’s why we’ve developed a
+                unique approach to learning that focuses on each student’s individual needs
+                and learning style.
+            </p>
+            <p class="text-base text-center sm:text-lg leading-loose">
+                Our teachers are dedicated to fostering a supportive and inclusive learning
+                environment, where students are encouraged to explore new ideas and take risks.
+            </p>
+            <p class="text-sm text-center sm:text-lg leading-loose">
+                We offer a wide range of academic and extracurricular programmes that enable
+                our students to build a strong foundation for success.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    <section id="contact" class="py-12 px-4 text-slate-400 dark:text-primary-light bg-primary dark:bg-primary-dark">
+        <div class="container mx-auto text-center">
+            <!-- Title -->
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6">
+                Contact Us
+            </h2>
+            <!-- Subtitle -->
+            <p class="text-base md:text-lg leading-relaxed mb-6 md:mb-8">
+                We'd love to hear from you! Reach out to us with your queries or feedback.
+            </p>
+            <!-- Form Section -->
+            <div class="max-w-3xl mx-auto">
+                <form class="space-y-6">
+                    <!-- Name -->
+                    <div>
+                        <label for="name" class="block text-sm font-medium mb-1">Full Name</label>
+                        <input type="text" id="name" name="name"
+                            class="w-full px-4 py-2 text-gray-900 rounded-lg shadow-sm focus:ring-2 focus:ring-pink-500 focus:outline-none"
+                            placeholder="Enter your full name" required />
+                    </div>
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium mb-1">Email Address</label>
+                        <input type="email" id="email" name="email"
+                            class="w-full px-4 py-2 text-gray-900 rounded-lg shadow-sm focus:ring-2 focus:ring-pink-500 focus:outline-none"
+                            placeholder="Enter your email address" required />
+                    </div>
+                    <!-- Message -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium mb-1">Message</label>
+                        <textarea id="message" name="message" rows="5"
+                            class="w-full px-4 py-2 text-gray-900 rounded-lg shadow-sm focus:ring-2 focus:ring-pink-500 focus:outline-none"
+                            placeholder="Enter your message" required></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit"
+                            class="w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 rounded-lg shadow-md focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 focus:outline-none transition duration-200">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="text-center pt-10">
+            <h2 class="text-3xl font-semibold py-5 ">Vishal Bharti Senior Secondary School</h2>
+
+            <h5 class="text-xl ">Vishal Bharti Senior Secondary School, Parwana Road, Pundrik Vihar, Pitam Pura, New Delhi, Delhi, India
+
+                9354937851/54</h5>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Locomotive Scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

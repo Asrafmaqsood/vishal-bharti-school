@@ -1,0 +1,56 @@
+/* Add animation for fade-in and slide-up effect */
+
+[data-scroll] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+[data-scroll].in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Scroll animations trigger with Locomotive Scroll */
+section {
+    position: relative;
+}
+
+section .hero h1,
+section .hero p,
+section .hero  a {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+section .hero h1.in-view,
+section .hero p.in-view,
+section .hero a.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Responsive text alignment for smaller screens */
+@media (max-width: 768px) {
+    #about .text-justify {
+        text-align: left;
+    }
+}
+
+/* Fixed Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+header.dark {
+    background: rgba(31, 41, 55, 0.9); /* Adjust for dark mode */
+}
